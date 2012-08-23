@@ -1,10 +1,5 @@
 
-try:
-    # Django <= 1.3
-    from django.contrib.syndication.feeds import Feed
-except ImportError:
-    # Django >= 1.4
-    from django.contrib.syndication.views import Feed
+from django.contrib.syndication.views import Feed
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
 from django.shortcuts import get_object_or_404
